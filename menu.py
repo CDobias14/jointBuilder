@@ -19,10 +19,6 @@ def jointBuilderUI():
     # Create the main layout
     widgets['mainLayout'] = cmds.columnLayout('mainLayout', w = 300, h = 300)
     
-    # Add banner image
-    widgets['imagePath'] = cmds.internalVar(upd = True) + 'icons/jointBuilderBanner.jpg'
-    cmds.image(w = 300, h = 90, image = widgets['imagePath'])
-    
     # Create the Settings divider
     cmds.frameLayout('settings', l = 'Settings', w = 298)
     
