@@ -8,18 +8,16 @@ widgets = {}
 
 ### FUNCTIONS
 
-widgets = {}
-
 def jointBuilderUI():
     # Check to see if the window already exists
     if cmds.window('jointBuilderUI', exists = True):
         cmds.deleteUI('jointBuilderUI')
     
     # Create the window
-    widgets['jointBuilderWindow'] = cmds.window('jointBuilderUI', title = 'Joint  Builder', w = 300, rtf = True, mnb = False, mxb = False, sizeable = False)
+    widgets['jointBuilderWindow'] = cmds.window('jointBuilderUI', title = 'Joint  Builder', w = 300, h = 50, rtf = True, mnb = False, mxb = False, sizeable = False)
     
     # Create the main layout
-    widgets['mainLayout'] = cmds.columnLayout('mainLayout', w = 300)
+    widgets['mainLayout'] = cmds.columnLayout('mainLayout', w = 300, h = 50)
     
     # Add banner image
     widgets['imagePath'] = cmds.internalVar(upd = True) + 'icons/jointBuilderBanner.jpg'
