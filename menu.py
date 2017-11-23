@@ -40,9 +40,6 @@ def jointBuilderUI():
     cmds.text(l = 'Joint Suffix')
     widgets['jointSuffix'] = cmds.textField('jointSuffix', w = 195)
     
-    # Create intermediate column layout
-    widgets['dividerLayout'] = cmds.columnLayout('dividerLayout', w = 300)
-    
     # Create the Locators divider
     cmds.frameLayout('locators', l = 'Locators', w = 300, h = 20, parent = widgets['mainLayout'])
     
